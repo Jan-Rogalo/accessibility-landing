@@ -149,7 +149,8 @@ section {
 }
 
 #contactUsForm {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     padding: 48px 20px 48px 28px;
     flex-direction: column;
     align-items: flex-start;
@@ -541,4 +542,95 @@ button img {
     border: none;
     padding: 0 20px 0 0;
     margin-left: 10px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.flex-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 120px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.custom-checkbox {
+    position: relative;
+    width: 208px;
+    height: 18px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.custom-checkbox label {
+    position: relative;
+    padding-left: 25px;
+    line-height: 18px;
+}
+
+.custom-checkbox label:before {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #8392A6;
+    border-radius: 3px;
+    background-color: white;
+    left: 0;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+    background-color: #3A6150;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    left: 6px;
+    top: 4px;
+}
+
+.custom-checkbox.focused label:before {
+    outline: 2px solid #000;
+}
+
+.submit-button {
+    margin-top: 40px;
+    width: 296px;
+    height: 49px;
+    border-radius: 2px;
+    padding: 11px 63px;
+    margin-bottom: 10px;
+    background-color: #3A6150;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }

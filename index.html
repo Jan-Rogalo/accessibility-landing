@@ -159,6 +159,26 @@
                 <li id="other" role="radio" aria-checked="false">Other</li>
               </ul>
             </fieldset>
+
+            <div>
+            <label id="messageLabel" for="message">Message:</label>
+            <input type="text" id="message" name="message" placeholder="Text here" aria-labelledby="messageLabel" aria-required="true" aria-describedby="messageDesc">
+            <small id="messageDesc" class="sr-only">Please enter your message here.</small>
+            </div>
+
+          </div>
+            <div class="flex-container">
+              <div class="custom-checkbox">
+                <input type="checkbox" id="terms1" name="terms" value="terms1" aria-label="Accept the Terms">
+                <label for="terms1">Accept the Terms</label>
+              </div>
+              <div class="custom-checkbox">
+                <input type="checkbox" id="terms2" name="terms" value="terms2" aria-label="Accept the Terms 2">
+                <label for="terms2">Accept the Terms 2</label>
+              </div>
+            </div>
+
+          <button type="submit" class="submit-button" aria-label="Send Message">Send Message</button>
         </form>
       </div>
     </div>

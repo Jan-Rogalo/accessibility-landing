@@ -71,7 +71,7 @@ dropdownMenu.addEventListener('keydown', function (event) {
             event.preventDefault();
         }
     }
-    
+
 function RadioGroupActiveDescendant(groupNode) {
     this.groupNode = groupNode;
     this.radioButtons = [];
@@ -231,3 +231,17 @@ window.addEventListener('load', function() {
         new RadioGroupActiveDescendant(radios[i]);
     }
 });
+
+window.onload = function() {
+    var checkboxes = document.querySelectorAll('.custom-checkbox input[type="checkbox"]');
+
+    for(var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+        });
+
+        checkboxes[i].addEventListener('blur', function() {
+            this.parentElement.classList.remove('focused');
+        });
+    }
+}
