@@ -634,3 +634,99 @@ input[type="checkbox"] {
     cursor: pointer;
     font-size: 16px;
 }
+
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-family: Outfit;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60.48px;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26.1px;
+    text-align: left;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-column input {
+    border: none;
+    border-bottom: 1px solid black;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid black;
+}
+
+.submit-button-short {
+    margin-top: 40px;
+    width: 206px;
+    height: 49px;
+    border-radius: 2px;
+    padding: 11px 63px;
+    margin-bottom: 10px;
+    background-color: #3A6150;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-div h3 {
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.1px;
+    text-align: left;
+}
+
+.contact-div p {
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26.1px;
+    letter-spacing: -2%;
+    color: gray;
+}
+
+.contact-div a {
+    color: gray;
+    text-decoration: none;
+}
